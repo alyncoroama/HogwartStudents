@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+#blackOverlay {
+    filter: opacity(80%);
+    background-color: rgb(121, 31, 31);
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    z-index: 100;
+}
+#popUP, #popUPChangePrefect {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    animation: appear 0.15s linear forwards;
+    animation-play-state: running;
+    padding: 20px;
+}
+#popUPChangePrefect {
+    z-index: 102;
+    background-color: red;
+}
+body,
+html,
+article {
+    animation: appear 1s linear forwards;
+    background-color: rgb(141, 46, 46);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+article {
+    width: 300px;
+    margin: auto;
+    border: 1px skyblue solid;
+    cursor: pointer;
+}
+article p {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    left: 9%;
+    display: table;
+}
+#nameList {
+    display: grid;
+    grid-gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: dense;
+    width: 90%;
+    margin: auto;
+    margin-top: 4em;
+}
+option, select, button, body {
+    font-family: 'Lilita One', cursive;
+}
+button, option, select {
+    border: skyblue solid 1px;
+    font-size: 1em;
+    background-color:skyblue;
+    cursor: pointer;
+}
+#popUPPhoto, #popUPHouseCrest {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+img {
+    zoom: 95%;
+}
+button {
+    margin: 10px;
+}
+button:focus, option:focus, select:focus {
+    outline: 0;
+}
+p, h1 {
+    color: skyblue;
+    cursor: default;
+}
+h1 {
+    display: block;
+    border-bottom: skyblue;
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.Ravenclaw  {
+     background-color: #000A90;
+}
+.Ravenclaw p {
+    color: #946B2D;
+}
+.Ravenclaw button {
+    background-color: #946B2D;
+    color: #000A90;
+}
+.Slytherin {
+    background-color: #0D6217;
+}
+.Slytherin p {
+    color: #AAAAAA;
+}
+.Slytherin button{
+    background-color: #AAAAAA;
+    color: #0D6217;
+}
+.Gryffindor {
+     background-color: #7F0909;
+ }
+.Gryffindor p {
+    color: #FFC500;
+}
+.Gryffindor button {
+    background-color: #FFC500;
+    color:#7F0909;
+}
+.Hufflepuff {
+      background-color: #EEE117;
+}
+.Hufflepuff p {
+    color: #000000;
+}
+.Hufflepuff button {
+    background-color: #000000;
+    color:#EEE117;
+}
